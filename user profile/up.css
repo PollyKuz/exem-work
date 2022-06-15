@@ -98,6 +98,7 @@ display: block;
     background-color: white;
     transform: scale(1.01);
     box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.26);
+    transition: background-color 1s cubic-bezier(1, 0.8, 0.5, 2), color 2s 1s linear;
     
 }
 .profile_sign {
