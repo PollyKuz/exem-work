@@ -7,91 +7,11 @@ body {
     display: flex;
     font-family: 'Poppins', sans-serif;
 }
-/* .menu {
-    position: fixed;
-    height: 100vh;
-    width: 200px;
-    background-color: rgb(246,246,246);
-    box-shadow: 5px 4px 3px 0px rgba(34, 60, 80, 0.27);
-} */
+
 .card, .chart, .board, .card_icon, .chart_icon, .board_menu, .board_head{ 
     border-radius: 5px;
 }
-/* h1 img{
-    display: none; 
-    width: 30px;
-    margin-left: 10px;
-} */
 
-
-/* .dash::before, .up::before, .maps::before, .nf::before, .sp::before {
-    content: "";
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
-.dash::before {
-    background-image: url("../img/dashboard_gray.svg");
-}
-.up::before {
-    background-image: url("../img/account_gray.svg");
-}
-.maps::before {
-    background-image: url("../img/map_gray.svg");
-    background-size: 30px;
-}
-.nf::before {
-    background-image: url("../img/notify_gray.svg");
-}
-.sp::before {
-    background-image: url("../img/support_gray.svg");
-}
-.dash:hover::before {
-    background-image: url("../img/dashboard_white.svg");
-} 
-.up:hover::before {
-    background-image: url("../img/account_white.svg");
-} 
-.maps:hover::before {
-    background-image: url("../img/map_white.png");
-    background-size: 20px;
-}
-.nf:hover::before {
-    background-image: url("../img/notify_white.png");
-}
-.sp:hover::before {
-    background-image: url("../img/support_white.png");
-}
-.menu li:hover {
-    background-color: rgb(195,32,86);
-    border-radius: 5px;
-}
-.menu li:hover a{
-    color: white;
-}
-.menu a {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-.menu h1, .main h1 {
-    margin: 20px;
-}
-.menu ul {
-    list-style: none;
-    padding-left: 0px;
-    margin: 20px;
-}
-.menu li{
-    display: flex;
-    align-items: center;
-} */
 .main {
     margin-left: 200px;
     width: calc(100% - 200px);
@@ -172,14 +92,13 @@ body {
     align-items: flex-end;
 }
 .price{
-    font-size: 30px;
+    font-size: 21px;
     font-weight: bolder;
     text-shadow: 2px 4px 3px rgba(175, 175, 175, 0.63);
 }
 .card_sign {
     margin: 10px;
     display: flex;
-    height: 30px;
     align-items: center;
     border-top: 1px solid black;   
 }
@@ -188,13 +107,14 @@ body {
 }
 .chart_icon img {
     width: 90%;
-    height: 60%;
+    height: 30%;
 }
 .chart {
     background-color: rgb(246,246,246);
     position: relative;
     margin: 10px 10px 20px ;
     width: calc(33% - 10px);
+    height: 300px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -206,7 +126,7 @@ body {
     position: absolute;
     box-shadow: 5px 4px 4px -3px rgba(34, 60, 80, 0.63);
     display: flex;
-    height: 160px;
+    max-height: 60%;
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -214,7 +134,7 @@ body {
 }
 .chart_container {
     margin: 10px;
-    height: 220px;
+    height: 100%; 
     display: flex;
     flex-direction: column;
     justify-content: flex-end; 
@@ -222,6 +142,7 @@ body {
 .chart_box {
     display:flex;
     margin: 10px;
+
     justify-content: space-around;
     align-content: space-around;
     flex-direction: row;
@@ -230,7 +151,7 @@ body {
 .chart_sign {
     margin: 10px;
     display: flex;
-    height: 30px;
+
     align-items: center;
     border-top: 1px solid black;
 }
@@ -248,7 +169,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 20px 10px;
     width: calc(50% - 10px);
     box-shadow: 5px 4px 3px 0px rgba(34, 60, 80, 0.27);
 }
@@ -260,6 +181,7 @@ body {
     margin: -10px 10px;
     display: flex;
     align-items: center;
+    font-size: 13px;
 }
 .point:hover {
     background-color: rgb(230, 187, 94);
@@ -267,6 +189,7 @@ body {
 }
 .board_container_list {
     margin: 100px 10px;
+    font-size: 13px;
 }
 .checkbox {
     width: calc(100% - 20px);
@@ -274,7 +197,8 @@ body {
     border-bottom: 1px solid black;
     align-items: center;
     height: 70px;
-    margin: 10px;
+    margin: 0px 10px;
+    padding-left: 10px;
 }
 .text {
     width: 80%;
@@ -310,19 +234,28 @@ body {
     flex-direction: column;
     padding: 10px;
     justify-content: center;
+    font-size: 13px;
 }
 .board_table {
     margin: 100px 10px;
+    font-size: 13px;
 }
 .board_table li {
     width: calc(100% - 20px);
     margin-left: 10px;
-    height: 50px;
+    height: 40px;
     margin: 10px;
     display:flex;
     border-bottom: 1px solid black;
     align-items: center;
 }
+.checkbox:hover {
+    background-color: rgba(255, 189, 46, 0.395);
+}
+.checkbox:active {
+    background-color: rgba(247, 195, 84, 0.813);
+}
+
 .id {
     width: 10%;
 }
@@ -337,6 +270,7 @@ footer ul{
     display: flex;
     list-style: none;
     padding: 0px;
+    margin-left: 10px;
 }
 footer li {
     margin: 10px;
@@ -371,6 +305,13 @@ a {
     .chart_container {
         font-size: 14px;
     }
+    .price {
+        font-size: 30px;
+    }
+
+    .chart {
+        height: 230px;
+    }
 }
 @media screen and (min-width: 650px) and (max-width: 800px) {
     .card_box {
@@ -397,6 +338,12 @@ a {
         width: 100%;
         margin-left: 0px;
     }
+    .price {
+        font-size: 30px;
+    }
+    .chart {
+        height: 250px;
+    }
 }
 @media screen and (min-width: 500px) and (max-width: 650px) {
     .card_box {
@@ -408,9 +355,13 @@ a {
     }
     .board_box {
         flex-direction: column;
+        margin: 20px;
     }
     .board {
-        width: calc(100% - 20px);
+        width: 100%;
+        margin: 20px 0px;
+     ;
+
     }
     .chart_sign {
         font-size: 10px;
@@ -425,14 +376,22 @@ a {
     }
     .chart_box {
         flex-direction: column;
+        margin: 20px;
     }
     .chart {
         width: 100%;
+        height: 400px;
+   
     }
+    .price {
+        font-size: 30px;
+    }
+
 }
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 350px) and (max-width: 500px) {
     .card_box {
         flex-direction: column;
+        
     } 
     .card_case {
         width: 100%;
@@ -449,10 +408,78 @@ a {
     .chart_container {
         font-size: 14px;
     }
+    .chart {
+        height: 300px;
+    }
 
     .main {
         width: 100%;
-        margin-left: 0px;
+        margin:0px;
+    }
+    .chart_box {
+        flex-direction: column;
+        margin: 10px 20px;
+    }
+    .chart {
+        width: 100%;
+    }
+    .card_case {
+        flex-direction: column;
+    }
+    .card {
+        width: calc(100% - 20px);
+    }
+    .price {
+        font-size: 30px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+    .menu_list {
+        font-size: 12px;
+        padding: 3px;
+        margin: 3px;
+        }
+    .menu_list img {
+        padding: 3px;
+        margin: 3px;
+    }
+    .board_container {
+        font-size: 13px;
+    }
+    .board_head {
+        font-size: 12px;
+    }
+}
+@media screen  and (max-width: 350px) {
+    .card_box {
+        flex-direction: column;
+        margin: 10px 0px;
+    } 
+    .card_case {
+        width: 100%;
+    }
+    .board_box {
+        flex-direction: column;
+    }
+    .board {
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .chart_sign {
+        font-size: 10px;
+    }
+    .chart_container {
+        font-size: 14px;
+    }
+    .chart {
+        height: 300px;
+    }
+
+    .main {
+        width: 100%;
+        margin:0px;
     }
     .chart_box {
         flex-direction: column;
@@ -465,5 +492,30 @@ a {
     }
     .card {
         width: calc(100% - 20px);
+    }
+    .price {
+        font-size: 30px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+    .menu_list {
+        font-size: 12px;
+        padding: 1px;
+        margin: 1px;
+        }
+    .menu_list img {
+        padding: 1px;
+        margin: 1px;
+    }
+    .board_container {
+        font-size: 12px;
+    }
+    .board_head {
+        font-size: 12px;
+    }
+    .board_table {
+        font-size: 12px;
     }
 }

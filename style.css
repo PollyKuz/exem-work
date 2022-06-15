@@ -23,43 +23,60 @@ h1 img{
 
 
 .dash::before {
-    background-image: url("../img/dashboard_gray.svg");
+    background-image: url("../exem-work/img/dashboard_gray.svg");
 }
 .up::before {
-    background-image: url("../img/account_gray.svg");
+    background-image: url("../exem-work/img/account_gray.svg");
 }
 .maps::before {
-    background-image: url("../img/map_gray.svg");
+    background-image: url("../exem-work/img/map_gray.svg");
     background-size: 30px;
 }
 .nf::before {
-    background-image: url("../img/notify_gray.svg");
+    background-image: url("../exem-work/img/notify_gray.svg");
 }
 .sp::before {
-    background-image: url("../img/support_gray.svg");
+    background-image: url("../exem-work/img/support_gray.svg");
 }
 .dash:hover::before {
-    background-image: url("../img/dashboard_white.svg");
+    background-image: url("../exem-work/img/dashboard_white.svg");
 } 
+
 .up:hover::before {
-    background-image: url("../img/account_white.svg");
+    background-image: url("../exem-work/img/account_white.svg");
 } 
 .maps:hover::before {
-    background-image: url("../img/map_white.png");
+    background-image: url("../exem-work/img/map_white.png");
     background-size: 20px;
 }
 .nf:hover::before {
-    background-image: url("../img/notify_white.png");
+    background-image: url("../exem-work/img/notify_white.png");
 }
 .sp:hover::before {
-    background-image: url("../img/support_white.png");
+    background-image: url("../exem-work/img/support_white.png");
 }
 .menu li:hover {
+    background-color: rgba(190, 86, 121, 0.442);
+    border-radius: 5px;
+}
+.menu img {
+    display: none;
+}
+.menu li:active {
     background-color: rgb(195,32,86);
     border-radius: 5px;
+
 }
 .menu li:hover a{
     color: white;
+}
+
+.menu li.dash_active a {
+    color: white;
+    background-color: rgb(195,32,86);
+}
+.menu li.dash_active img {
+    display: block;
 }
 .menu a {
     display: flex;
