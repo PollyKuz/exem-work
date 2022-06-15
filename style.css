@@ -57,13 +57,16 @@ h1 img{
 }
 .menu li:hover {
     background-color: rgba(190, 86, 121, 0.442);
+    box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.26);
     border-radius: 5px;
+    transition: background-color 1s cubic-bezier(1, 0.8, 0.5, 2), color 2s 1s linear;
 }
 .menu img {
     display: none;
 }
 .menu li:active {
     background-color: rgb(195,32,86);
+    box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.26);
     border-radius: 5px;
 
 }
@@ -74,11 +77,13 @@ h1 img{
 .menu li.dash_active a {
     color: white;
     background-color: rgb(195,32,86);
+    box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.26);
     border-radius: 5px;
 }
 .menu li.up_active a {
     color: white;
     background-color: rgb(195,32,86);
+    box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.26);
     border-radius: 5px;
 }
 .dash_active .dash::before {
@@ -109,8 +114,14 @@ a {
     text-decoration: none;
     color: black;
 }
+
+footer a:hover {
+    color:brown;
+
+}
 footer {
     height: 50px;
+    align-items: center
 }
 footer ul{
     display: flex;

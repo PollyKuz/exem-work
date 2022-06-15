@@ -21,6 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 200px;
+    padding: 0px 10px;
     width: calc(100% - 200px);
     background-color: rgb(228, 228, 228);
     height: 100vh;
@@ -52,8 +53,7 @@ body {
     padding-left: 10px;
 }
 .form {
-    padding-top: 70px;
-    background-color: rgb(236, 236, 236);
+    padding: 70px 10px 10px 10px;
     border-radius: 5px;
 }
 .row {
@@ -71,6 +71,8 @@ display: block;
     width: calc(100% - 400px);
     position: relative;
     margin: 10px;
+    background-color: rgb(236, 236, 236);
+   
     box-shadow: 5px 4px 3px 0px rgba(34, 60, 80, 0.27);
     border-radius: 5px;
 }
@@ -91,6 +93,13 @@ display: block;
     display: flex;
     height: calc(100% - 50px);
 }
+
+.form_box:hover, .profile:hover {
+    background-color: white;
+    transform: scale(1.01);
+    box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.26);
+    
+}
 .profile_sign {
     width: 100px;
     height: 100px;
@@ -104,7 +113,7 @@ display: block;
     
 }
 .profile_sign:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
     transition: 2s;
     cursor: pointer;
 }
@@ -119,7 +128,7 @@ display: block;
     align-items: center;
     background-color: rgb(236, 236, 236);
     height: 350px;
-    margin: 10px;
+    margin: 10px ;
     padding: 10px;
     color: rgb(73, 73, 73);
     box-shadow: 5px 4px 3px 0px rgba(34, 60, 80, 0.27);
@@ -129,7 +138,9 @@ display: block;
     margin: 10px;
 }
 
-
+.gray {
+    color: grey;
+}
 
 input, textarea {
 
@@ -141,6 +152,7 @@ input, textarea {
     background-color: #ffffff00;
     transition: .3s box-shadow;
     height: 30px;
+    margin: 10px 0px;
   
   }
   textarea {
@@ -155,11 +167,10 @@ input:hover, textarea:hover {
     box-shadow: 0px -1px 5px 3px rgba(34, 60, 80, 0.2);
     background-color: rgba(218, 73, 122, 0.094); 
     cursor: pointer;
+    transition: background-color 1s cubic-bezier(1, 0.8, 0.5, 2), color 2s 1s linear;
+    border-radius: 5px;
     
 }
-
-
-
 
 .row div {
     width: 100%;
@@ -187,6 +198,8 @@ button {
 
     button:hover {
     box-shadow: 0px -1px 5px 3px rgba(34, 60, 80, 0.2) inset;
+    font-size: 18px;
+    transition: 1s;
     cursor: pointer;
     }
 .bold {
@@ -203,11 +216,16 @@ button {
     }
     .profile {
         width: calc(100% - 40px);
-        margin-top: 40px;
+        margin: 40px;
         height: 300px;
     }
     .profile_sign {
         margin-top: -300px;
+    }
+    .main {
+    height: 100%;
+        width: 100%;
+
     }
 }
 
@@ -221,11 +239,11 @@ button {
     }
     .profile {
         width: calc(100% - 40px);
-        margin-top: 40px;
-        height: 300px;
+        margin: 40px;
+        height: 350px;
     }
     .profile_sign {
-        margin-top: -300px;
+        margin-top: -350px;
     }
 
     .main {
@@ -233,11 +251,16 @@ button {
         width: 100%;
 
     }
+    .main {
+        height: 100%;
+    }
 }
 
 @media screen  and (max-width: 450px) {
+
     footer {
-        font-size: 12px;
+        font-size: 10px;
+    
     }
    .profile {
     height: 350px;
@@ -245,6 +268,19 @@ button {
    .profile_sign {
     margin-top: -350px ;
 
+    }
+    .main {
+        height: 100%;
+        padding: 0px;
+    }
+    .profile {
+        width: calc(100% - 40px);
+        margin-top: 40px;
+        height: 400px;
+    }
+    .profile_sign {
+        margin-top: -400px;
+    }
 }
 }
 

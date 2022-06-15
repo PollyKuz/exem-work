@@ -15,6 +15,7 @@ body {
 .main {
     margin-left: 200px;
     width: calc(100% - 200px);
+    padding: 0px 10px;
     height: 100%;
     background-color: rgb(234,234,234);
 }
@@ -30,10 +31,12 @@ body {
 }
 
 .card_icon:hover, .chart_icon:hover, .board_menu:hover, .board_head:hover{
+    transform: scale(1.01);
     margin-top: -20px ;
     transition: 1s;
     cursor: pointer;
     border-radius: 10px;
+    box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.26);
 }
 .chart_box, .board_box, footer {
     display: flex;
@@ -60,7 +63,9 @@ body {
 }
 
 .card:hover, .chart:hover, .board:hover {
+    background-color: white;
     transform: scale(1.02);
+    box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.26);
     cursor: pointer;
 }
 .card_icon {
@@ -107,15 +112,22 @@ body {
     padding: 10px;
 }
 .chart_icon img {
-    width: 75%;
+    width: 70%;
+    
+
+}
+.chart_container span:first-child {
+    color: rgb(66, 0, 0);
+    font-size: 18px;
+    font-weight: bolder;
 
 }
 .chart {
     background-color: rgb(246,246,246);
     position: relative;
-    margin: 10px 10px 20px ;
+    padding: 0px 10px;
+    margin: 10px 10px; 
     width: calc(33% - 10px);
-    height: 300px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -124,18 +136,15 @@ body {
 .chart_icon {
     width: calc(100% - 20px);
     overflow: hidden;
-    position: absolute;
     box-shadow: 5px 4px 4px -3px rgba(34, 60, 80, 0.63);
     display: flex;
-    max-height: 60%;
     align-items: center;
     justify-content: center;
     padding: 10px;
     margin: -10px 10px
 }
 .chart_container {
-    margin: 10px;
-    height: 100%; 
+    margin: 20px 10px 10px 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end; 
@@ -144,15 +153,10 @@ body {
     display:flex;
     margin: 10px;
 
-    justify-content: space-around;
-    align-content: space-around;
-    flex-direction: row;
-    align-items: center;
 }
 .chart_sign {
     margin: 10px;
     display: flex;
-
     align-items: center;
     border-top: 1px solid black;
 }
@@ -177,9 +181,9 @@ body {
 .board_menu {
     position: absolute;
     box-shadow: 5px 4px 4px -3px rgba(34, 60, 80, 0.63);
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     height: 70px;
-    margin: -10px 10px;
+    margin: -10px 20px;
     display: flex;
     align-items: center;
     font-size: 13px;
@@ -187,15 +191,16 @@ body {
 .point:hover {
     background-color: rgb(230, 187, 94);
     cursor: pointer;
+    border-radius: 8px;
 }
 .board_container_list {
-    margin: 100px 10px;
+    margin: 70px 10px 20px 10px;
     font-size: 13px;
 }
 .checkbox {
     width: calc(100% - 20px);
     display: flex;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid grey;
     align-items: center;
     height: 70px;
     margin: 0px 10px;
@@ -228,9 +233,9 @@ body {
     position: absolute;
     box-shadow: 5px 4px 4px -3px rgba(34, 60, 80, 0.63); 
     color: white;
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
     height: 70px;
-    margin: -10px 10px;
+    margin: -10px 20px;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -238,7 +243,7 @@ body {
     font-size: 13px;
 }
 .board_table {
-    margin: 100px 10px;
+    margin: 70px 10px 20px 10px;
     font-size: 13px;
 }
 .board_table li {
@@ -247,11 +252,12 @@ body {
     height: 40px;
     margin: 10px;
     display:flex;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid grey;
     align-items: center;
 }
 .checkbox:hover {
     background-color: rgba(255, 189, 46, 0.395);
+    transition: background-color 1s cubic-bezier(1, 0.8, 0.5, 2), color 2s 1s linear;
 }
 .checkbox:active {
     background-color: rgba(247, 195, 84, 0.813);
@@ -298,12 +304,10 @@ a {
         font-size: 14px;
     }
     .price {
-        font-size: 30px;
+        font-size: 25px;
     }
 
-    .chart {
-        height: 230px;
-    }
+
 }
 @media screen and (min-width: 650px) and (max-width: 800px) {
     .card_box {
@@ -331,11 +335,9 @@ a {
         margin-left: 0px;
     }
     .price {
-        font-size: 30px;
+        font-size: 25px;
     }
-    .chart {
-        height: 250px;
-    }
+
 }
 @media screen and (min-width: 500px) and (max-width: 650px) {
     .card_box {
@@ -352,8 +354,7 @@ a {
     .board {
         width: 100%;
         margin: 20px 0px;
-     ;
-
+     
     }
     .chart_sign {
         font-size: 10px;
@@ -372,11 +373,11 @@ a {
     }
     .chart {
         width: 100%;
-        height: 400px;
+        margin: 10px 0px;
    
     }
     .price {
-        font-size: 30px;
+        font-size: 25px;
     }
 
 }
@@ -400,13 +401,12 @@ a {
     .chart_container {
         font-size: 14px;
     }
-    .chart {
-        height: 300px;
-    }
+
 
     .main {
         width: 100%;
         margin:0px;
+        padding: 0px;
     }
     .chart_box {
         flex-direction: column;
@@ -414,6 +414,7 @@ a {
     }
     .chart {
         width: 100%;
+        margin: 10px 0px;
     }
     .card_case {
         flex-direction: column;
@@ -422,7 +423,7 @@ a {
         width: calc(100% - 20px);
     }
     .price {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     footer {
@@ -430,18 +431,22 @@ a {
     }
     .menu_list {
         font-size: 12px;
-        padding: 3px;
-        margin: 3px;
+        padding: 1px;
+        margin: 1px;
         }
     .menu_list img {
-        padding: 3px;
-        margin: 3px;
+        padding: 1px;
+        margin: 1px;
     }
     .board_container {
         font-size: 13px;
     }
     .board_head {
         font-size: 12px;
+    }
+    .checkbox {
+        height: 90px;
+
     }
 }
 @media screen  and (max-width: 350px) {
@@ -458,6 +463,7 @@ a {
     .board {
         width: 100%;
         margin: 20px 0px;
+        padding: 0px;
     }
     .chart_sign {
         font-size: 10px;
@@ -465,19 +471,19 @@ a {
     .chart_container {
         font-size: 14px;
     }
-    .chart {
-        height: 250px;
-    }
+
 
     .main {
         width: 100%;
         margin:0px;
+        padding: 0px;
     }
     .chart_box {
         flex-direction: column;
     }
     .chart {
         width: 100%;
+        margin: 10px 0px;
     }
     .card_case {
         flex-direction: column;
@@ -486,7 +492,7 @@ a {
         width: calc(100% - 20px);
     }
     .price {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     footer {
@@ -509,5 +515,9 @@ a {
     }
     .board_table {
         font-size: 12px;
+    }
+    .checkbox {
+        height: 100px;
+
     }
 }
