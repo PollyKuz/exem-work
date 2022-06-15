@@ -18,10 +18,12 @@ body {
 
 
 .main {
+    display: flex;
+    flex-direction: column;
     margin-left: 200px;
     width: calc(100% - 200px);
     background-color: rgb(228, 228, 228);
-    height: 100%;
+    height: 100vh;
 }
 .menu h1, .main h1 {
     margin: 20px;
@@ -64,11 +66,9 @@ body {
 label, input {
 display: block;
 
-
-
 }
 .form_box {
-    width: 60%;
+    width: calc(100% - 400px);
     position: relative;
     margin: 10px;
     box-shadow: 5px 4px 3px 0px rgba(34, 60, 80, 0.27);
@@ -89,6 +89,7 @@ display: block;
 }
 .box {
     display: flex;
+    height: calc(100% - 50px);
 }
 .profile_sign {
     width: 100px;
@@ -232,5 +233,18 @@ button {
         width: 100%;
 
     }
+}
+
+@media screen  and (max-width: 450px) {
+    footer {
+        font-size: 12px;
+    }
+   .profile {
+    height: 350px;
+   }
+   .profile_sign {
+    margin-top: -350px ;
+
+}
 }
 

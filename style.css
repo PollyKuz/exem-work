@@ -74,9 +74,18 @@ h1 img{
 .menu li.dash_active a {
     color: white;
     background-color: rgb(195,32,86);
+    border-radius: 5px;
 }
-.menu li.dash_active img {
-    display: block;
+.menu li.up_active a {
+    color: white;
+    background-color: rgb(195,32,86);
+    border-radius: 5px;
+}
+.dash_active .dash::before {
+    background-image: url("../exem-work/img/dashboard_white.svg");
+}
+.up_active .up::before {
+    background-image: url("../exem-work/img/account_white.svg");
 }
 .menu a {
     display: flex;
@@ -100,10 +109,14 @@ a {
     text-decoration: none;
     color: black;
 }
+footer {
+    height: 50px;
+}
 footer ul{
     display: flex;
     list-style: none;
     padding: 0px;
+    margin-left: 10px;
 }
 footer li {
     margin: 10px;
