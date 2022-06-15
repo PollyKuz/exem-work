@@ -7,21 +7,97 @@ body {
     display: flex;
     font-family: 'Poppins', sans-serif;
 }
-.menu {
+/* .menu {
     position: fixed;
     height: 100vh;
     width: 200px;
     background-color: rgb(246,246,246);
     box-shadow: 5px 4px 3px 0px rgba(34, 60, 80, 0.27);
-}
+} */
 .card, .chart, .board, .card_icon, .chart_icon, .board_menu, .board_head{ 
     border-radius: 5px;
 }
-h1 img{
+/* h1 img{
     display: none; 
     width: 30px;
     margin-left: 10px;
+} */
+
+
+/* .dash::before, .up::before, .maps::before, .nf::before, .sp::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+
+.dash::before {
+    background-image: url("../img/dashboard_gray.svg");
+}
+.up::before {
+    background-image: url("../img/account_gray.svg");
+}
+.maps::before {
+    background-image: url("../img/map_gray.svg");
+    background-size: 30px;
+}
+.nf::before {
+    background-image: url("../img/notify_gray.svg");
+}
+.sp::before {
+    background-image: url("../img/support_gray.svg");
+}
+.dash:hover::before {
+    background-image: url("../img/dashboard_white.svg");
+} 
+.up:hover::before {
+    background-image: url("../img/account_white.svg");
+} 
+.maps:hover::before {
+    background-image: url("../img/map_white.png");
+    background-size: 20px;
+}
+.nf:hover::before {
+    background-image: url("../img/notify_white.png");
+}
+.sp:hover::before {
+    background-image: url("../img/support_white.png");
+}
+.menu li:hover {
+    background-color: rgb(195,32,86);
+    border-radius: 5px;
+}
+.menu li:hover a{
+    color: white;
+}
+.menu a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.menu h1, .main h1 {
+    margin: 20px;
+}
+.menu ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 20px;
+}
+.menu li{
+    display: flex;
+    align-items: center;
+} */
+.main {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    background-color: rgb(234,234,234);
+}
+
 .main h1:hover {
     cursor: pointer;
     background-color: #f6f6f6;
@@ -37,62 +113,6 @@ h1 img{
     transition: 1s;
     cursor: pointer;
     border-radius: 10px;
-}
-
-.dash::before, .up::before, .maps::before, .nf::before, .sp::before {
-    content: "";
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.dash::before {
-    background-image: url("../img/dashboard_gray.svg");
-}
-.up::before {
-    background-image: url("../img/account_gray.svg");
-}
-.maps::before {
-    background-image: url("../img/map_gray.svg");
-}
-.nf::before {
-    background-image: url("../img/notify_gray.svg");
-}
-.sp::before {
-    background-image: url("../img/support_gray.svg");
-}
-.dash:hover::before {
-    background-image: url("../img/dashboard_white.svg");
-} 
-.menu li:hover {
-    background-color: rgb(195,32,86);
-    border-radius: 5px;
-}
-.menu li:hover a{
-    color: white;
-}
-.up:hover::before {
-    background-image: url("../img/account_white.svg");
-} 
-.main {
-    margin-left: 200px;
-    width: calc(100% - 200px);
-    background-color: rgb(234,234,234);
-}
-.menu h1, .main h1 {
-    margin: 20px;
-}
-.menu ul {
-    list-style: none;
-    padding-left: 0px;
-    margin: 20px;
-}
-.menu li{
-    display: flex;
-    align-items: center;
 }
 .chart_box, .board_box, footer {
     display: flex;
@@ -167,7 +187,8 @@ h1 img{
     padding: 10px;
 }
 .chart_icon img {
-    width: 80%;
+    width: 90%;
+    height: 60%;
 }
 .chart {
     background-color: rgb(246,246,246);
@@ -355,9 +376,7 @@ a {
     .card_box {
         flex-direction: column;
     }
-    h1 img{
-        display: inline; 
-    } 
+
     .card_case {
         width: 100%;
     }
@@ -373,9 +392,7 @@ a {
     .chart_container {
         font-size: 14px;
     }
-    .menu {
-        display: none;
-    }
+
     .main {
         width: 100%;
         margin-left: 0px;
@@ -385,9 +402,7 @@ a {
     .card_box {
         flex-direction: column;
     }
-    h1 img{
-        display: inline; 
-    } 
+
     .card_case {
         width: 100%;
     }
@@ -403,9 +418,7 @@ a {
     .chart_container {
         font-size: 14px;
     }
-    .menu {
-        display: none;
-    }
+
     .main {
         width: 100%;
         margin-left: 0px;
@@ -420,9 +433,6 @@ a {
 @media screen and (max-width: 500px) {
     .card_box {
         flex-direction: column;
-    }
-    h1 img{
-        display: inline; 
     } 
     .card_case {
         width: 100%;
@@ -439,9 +449,7 @@ a {
     .chart_container {
         font-size: 14px;
     }
-    .menu {
-        display: none; 
-    }
+
     .main {
         width: 100%;
         margin-left: 0px;

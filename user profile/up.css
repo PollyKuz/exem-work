@@ -7,62 +7,16 @@ body {
     display: flex;
     font-family: 'Poppins', sans-serif;
 }
-.menu {
-    position: fixed;
-    height: 100vh;
-    width: 200px;
-    background-color: rgb(246,246,246);
-    box-shadow: 5px 4px 3px 0px rgba(34, 60, 80, 0.27);
-}
-h1 img{
-    display: none; 
-    width: 30px;
-    margin-left: 10px;
-}
+
 .main h1:hover {
     cursor: pointer;
     background-color: #f6f6f6;
     box-shadow: 5px 4px 3px 0px rgba(34, 60, 80, 0.27);
     border-radius: 10px;
 }
-.dash::before, .up::before, .maps::before, .nf::before, .sp::before {
-    content: "";
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.dash::before {
-    background-image: url("../img/dashboard_gray.svg");
-}
-.up::before {
-    background-image: url("../img/account_gray.svg");
-}
-.maps::before {
-    background-image: url("../img/map_gray.svg");
-}
-.nf::before {
-    background-image: url("../img/notify_gray.svg");
-}
-.sp::before {
-    background-image: url("../img/support_gray.svg");
-}
-.dash:hover::before {
-    background-image: url("../img/dashboard_white.svg");
-} 
-.menu li:hover {
-    background-color: rgb(195,32,86);
-    border-radius: 5px;
-}
-.menu li:hover a{
-    color: white;
-}
-.up:hover::before {
-    background-image: url("../img/account_white.svg");
-} 
+
+
+
 .main {
     margin-left: 200px;
     width: calc(100% - 200px);
@@ -83,26 +37,8 @@ h1 img{
 .chart_box, .board_box, footer {
     display: flex;
 }
-a {
-    text-decoration: none;
-    color: black;
-}
-footer ul{
-    display: flex;
-    list-style: none;
-    padding: 0px;
-}
-footer li {
-    margin: 10px;
-}
-.year {
-    margin: 10px 10px 10px auto;
-}
-h1 img{
-    display: none; 
-    width: 30px;
-    margin-left: 10px;
-}
+
+
 .main h1:hover {
     cursor: pointer;
     background-color: #f6f6f6;
@@ -289,13 +225,7 @@ button {
     .profile_sign {
         margin-top: -300px;
     }
-    .menu {
-        display: none;
-    }
-    h1 img{
-        display: inline; 
 
-    }
     .main {
         margin-left: 0px;
         width: 100%;
