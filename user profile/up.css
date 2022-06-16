@@ -6,6 +6,7 @@
 body {
     display: flex;
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(228, 228, 228);
 }
 
 .main h1:hover {
@@ -21,10 +22,11 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 200px;
+    margin-bottom: 50px;
     padding: 0px 10px;
     width: calc(100% - 200px);
-    background-color: rgb(228, 228, 228);
-    height: 100vh;
+
+    height: calc(100% - 50px);
 }
 .menu h1, .main h1 {
     margin: 20px;
@@ -72,7 +74,7 @@ display: block;
     position: relative;
     margin: 10px;
     background-color: rgb(236, 236, 236);
-   
+    /* height: calc(100% - 150px); */
     box-shadow: 5px 4px 3px 0px rgba(34, 60, 80, 0.27);
     border-radius: 5px;
 }
@@ -97,6 +99,7 @@ display: block;
 .form_box:hover, .profile:hover {
     background-color: white;
     transform: scale(1.01);
+    transition: 1s;
     box-shadow: 4px 4px 19px 0px rgba(34, 60, 80, 0.26);
     transition: background-color 1s cubic-bezier(1, 0.8, 0.5, 2), color 2s 1s linear;
     
@@ -283,5 +286,5 @@ button {
         margin-top: -400px;
     }
 }
-}
+
 
