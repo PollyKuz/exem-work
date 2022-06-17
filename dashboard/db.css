@@ -64,6 +64,9 @@ body {
     margin: 10px;
     box-shadow: 5px 4px 3px 0px rgba(34, 60, 80, 0.27);
 }
+.title {
+    font-size: 15px;
+}
 
 .card:hover, .chart:hover, .board:hover {
     background-color: white;
@@ -224,7 +227,7 @@ body {
 .menu_list {
     display: flex;
     align-items: center;
-    padding: 5px;
+    padding: 3px;
     height: 40px;
     margin-left: 10px;
 }
@@ -232,7 +235,7 @@ body {
     width: 40px;
 }
 .menu_list img {
-    margin: 5px;
+    margin: 3px;
     width: 20px;
 }
 .board_head {
